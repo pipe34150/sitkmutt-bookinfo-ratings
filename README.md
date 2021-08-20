@@ -1,5 +1,11 @@
 # Bookinfo Rating Service
-Rating Service has been developed on NodeJS
 
-##License
+Rating service has been developed on NodeJS
+
+## License
+
 MIT License
+
+## Website
+
+[Opsta (Thailand) Co., Ltd.](https://www.opsta.co.th)
