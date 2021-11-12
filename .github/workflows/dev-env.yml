@@ -20,7 +20,7 @@ jobs:
           push: true
           tags: pipe34150/bookinfo-ratings:dev
           secrets: |
-            GIT_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+            "github_token=${{ secrets.GITHUB_TOKEN }}"
 
       # - name: Checkout code
       #   uses: actions/checkout@v2
