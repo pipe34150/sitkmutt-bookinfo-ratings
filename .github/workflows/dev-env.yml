@@ -53,10 +53,3 @@ jobs:
          # Everything works fine
           curl http://sitkmutt.bookinfo.dev.opsta.net/student30/ratings/health | grep "Ratings is good"
           echo $?
-          if $? == 1; then
-            echo "NOT GOOD"
-          elseif $? == 0 then
-            echo "IS GOOD"
-          else
-            echo "STH WRONG"
-          fi
