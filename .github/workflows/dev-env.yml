@@ -40,8 +40,8 @@ jobs:
           chart: k8s/helm
           value-files: k8s/helm-values/values-bookinfo-dev-ratings.yaml
           values: |
-          {
-            "extraEnv": {
-              "COMMIT_SHA": "${{ github.sha }}"
+            {
+              "extraEnv": {
+                "COMMIT_SHA": "${{ github.sha }}"
+              }
             }
-          }
