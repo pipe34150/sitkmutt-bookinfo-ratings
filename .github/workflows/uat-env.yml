@@ -49,7 +49,8 @@ jobs:
     needs: deploy
     runs-on: ubuntu-20.04
     steps:
-      - run: |
-         # Everything works fine
+      - name: Run Acceptance Test
+        run: |
+          # Everything works fine
           curl http://sitkmutt.bookinfo.uat.opsta.net/student30/ratings/health | grep "Ratings is good"
           echo $?
