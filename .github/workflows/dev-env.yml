@@ -50,4 +50,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Run Acceptance Test
-        run: curl http://sitkmutt.bookinfo.uat.opsta.net/student30/ratings/health | grep "Ratings is good"
+        run: |
+          # Everything works fine
+          curl http://sitkmutt.bookinfo.dev.opsta.net/student30/ratings/health | grep "Ratings is good"
+          echo $?
