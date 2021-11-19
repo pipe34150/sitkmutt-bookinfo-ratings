@@ -45,3 +45,14 @@ jobs:
                 "COMMIT_SHA": "${{ github.sha }}"
               }
             }
+      - name: accpetance test
+        use: actions/checkout@v2
+        run: |
+         # Everything works fine
+          curl http://sitkmutt.bookinfo.dev.opsta.net/student30/ratings/health | grep "Ratings is good"
+          echo $?
+          if echo $?; then
+            echo "A"
+          else
+            echo "B"
+          fi
